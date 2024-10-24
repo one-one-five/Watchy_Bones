@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watchy Bones</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>💀 Watchy Bones Camera Feed 💀</h1>
+        <p>Система отслеживания лиц с камерой в черепе скелета</p>
+    </header>
+    
+    <main>
+        <div class="video-container">
+            <img src="{{ url_for('video_feed') }}" alt="Видео трансляция с камеры" class="video-feed">
+        </div>
+        <div class="instructions">
+            <p>Нажмите 'Ctrl+C' в консоли, чтобы остановить сервер и выйти.</p>
+            <p>Или введите <code>/shutdown</code> в адресной строке браузера для завершения работы сервера.</p>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2024 Watchy Bones. Все права защищены.</p>
+    </footer>
+</body>
+</html>
+
